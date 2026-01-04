@@ -1,9 +1,15 @@
-function genArr(n){
-    let arr = new Array(n);
-    for(let i = 0 ; i < n ; i++){
-        arr[i] = Math.floor(Math.random()*10);
-    }
-    return arr;
+function genArr(n) {
+  let arr = new Array(n);
+  for (let i = 0; i < n; i++) {
+    arr[i] = Math.floor(Math.random() * 10);
+  }
+  return arr;
 }
 
-export {genArr};
+function sumArr(arr) {
+  let ans = arr.reduce((sum, curr) => sum + curr);
+  console.log(ans);
+  return ans;
+}
+
+export { genArr, sumArr };
