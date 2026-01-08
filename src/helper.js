@@ -8,7 +8,6 @@ function genArr(n) {
 
 function sumArr(arr) {
   let ans = arr.reduce((sum, curr) => sum + curr);
-  console.log(ans);
   return ans;
 }
 
